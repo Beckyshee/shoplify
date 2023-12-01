@@ -1,0 +1,39 @@
+
+
+### Place Order
+POST http://localhost:5400/order/createOrder
+Content-Type: application/json
+
+{
+    "productID": "5cc3bcd0-63ae-4bea-b82f-b865b0ff8436",
+    "address": "skuta.",
+    
+    "Quantity": 20
+}
+
+### Get All Orders
+GET http://localhost:5400/order/
+
+
+### update order
+
+PUT  http://localhost:5400/product/updateOrder
+Content-Type: application/json
+
+{   
+    "orderId": "5cc3bcd0-63ae-4bea-b82f-b865b0ff8436",
+    "status": "pending",
+    
+    
+}
+
+###delete product
+DELETE  http://localhost:5400/order/deleteOrder
+Content-Type: application/json
+
+{  
+
+    "orderID":"5cc3bcd0-63ae-4bea-b82f-b865b0ff8436"
+  
+}
+
